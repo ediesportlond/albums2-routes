@@ -5,7 +5,7 @@ export default function AlbumList() {
     const [albums, setAlbums] = useState();
     
     useEffect(()=>{
-        fetch('https://albums-api-ee.web.app/albums')
+        fetch(process.env.REACT_APP_ENDPOINT+'/albums')
         .then(res=>res.json())
         .then(setAlbums)
         .catch(console.error)
