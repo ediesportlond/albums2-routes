@@ -1,0 +1,4 @@
+:root{
+    --transparent-gray: rgba(211, 211, 211, 0.331);
+    --margin: calc(1rem + 1vw);
+  }
