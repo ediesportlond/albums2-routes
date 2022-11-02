@@ -1,7 +1,9 @@
-export default function AddAlbum(){
+import Header from '../components/Header';
+
+export default function AddAlbum({title}){
     return(
         <>
-            <h1>Album Title</h1>
+            <Header title={title} />
             <p>New Album Form goes here</p>
         </>
     )
