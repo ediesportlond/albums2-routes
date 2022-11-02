@@ -8,8 +8,8 @@ a{
   color:inherit;
 }
 header {
-  border: 2px solid red;
-  background-color: #ff000040;
+  border: 2px solid green;
+  background-color: rgba(0, 128, 0, 0.532);
   margin: calc(1rem + 1vw);
 }
 
