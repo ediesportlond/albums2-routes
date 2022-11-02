@@ -1,31 +1,37 @@
+body {
+  background-color: rgb(255, 255, 255);
+}
+
 .App {
   text-align: center;
-  background-color: #fff;
 }
 
-a{
+a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
+
 header {
-  border: 2px solid green;
-  background-color: rgba(0, 128, 0, 0.532);
+  border: 1px solid grey;
   margin: calc(1rem + 1vw);
+  border-radius: 1rem;
 }
 
-.album-list{
-  border: 2px solid gold;
-  background-color: rgba(255, 217, 0, 0.384);
+.album-list {
+  border: 1px solid grey;
+  background-color: rgba(211, 211, 211, 0.331);
   margin: calc(1rem + 1vw);
+  border-radius: 1rem;
 }
 
-.album-card{
-  border: 2px solid grey;
+.album-card {
+  border: 1px solid grey;
   margin: 1rem;
-  background-color: #eee;
+  background-color: rgb(255, 255, 255);
+  border-radius: 1rem;
 }
 
-.album-title{
-  text-transform:capitalize;
+.album-title {
+  text-transform: capitalize;
   color: #605040;
 }

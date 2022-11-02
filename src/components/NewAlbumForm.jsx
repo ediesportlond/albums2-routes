@@ -16,9 +16,13 @@ export default function NewAlbumForm() {
         e.preventDefault();
         setFormData({...formData, [e.target.name]:e.target.value});
     }
-
+    
     const clear = (e) => {
         e.preventDefault();
+        if(formData.album === ''|| formData.artist === ''){
+            alert("Complete all fields before saving")
+            return;
+        }
         setFormData(blankAlbum);
     }
     
@@ -42,15 +46,15 @@ export default function NewAlbumForm() {
                 <form action="" onSubmit={handleFormSubmit}>
                     <label htmlFor="album">Album Name: 
                     </label>
-                    <input type="text" name='album' value={formData.album} onChange={handleFormChange}/>
+                    <input required type="text" name='album' value={formData.album} onChange={handleFormChange}/>
                     <br />
                     <label htmlFor="artist"> Artist: 
                     </label>
-                    <input type="text" name='artist' value={formData.artist} onChange={handleFormChange}/>
+                    <input required type="text" name='artist' value={formData.artist} onChange={handleFormChange}/>
                     <br />
                     <label htmlFor="year">Year: 
                     </label>
-                    <input type="number" name='year' value={formData.year} onChange={handleFormChange}/>
+                    <input required type="number" name='year' value={formData.year} onChange={handleFormChange}/>
                     <br />
                     <button onClick={clear}>Reset</button>
                     <input type="submit" value="Add New Album" />
